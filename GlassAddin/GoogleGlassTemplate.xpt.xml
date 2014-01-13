@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<Template>
+	<TemplateConfiguration>
+		<_Name>Google Glass Application</_Name>
+		<_Category>C#/Glass</_Category>
+		<Icon>monodroid-project</Icon>
+		<LanguageName>C#</LanguageName>
+		<_Description>Creates a Google Glass Application that targets the XE12 Google Glass.</_Description>
+	</TemplateConfiguration>
+	
+	<Actions>
+		<Open filename = "MainActivity.cs"/>
+	</Actions>
+	
+	<Combine name = "${ProjectName}" directory = ".">
+		<Options>
+			<StartupProject>${ProjectName}</StartupProject>
+		</Options>
+		
+		<Project name = "${ProjectName}" directory = "." type = "MonoDroid">
+			<Options
+				AndroidApplication="true"
+				AndroidResgenFile="Resources/Resource.designer.cs"
+				AndroidResgenClass="Resource"
+				TargetFrameworkVersion="MonoAndroid,Version=v4.0.3" />
+			<References>
+				<Reference type="Gac" refto="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+				<Reference type="Gac" refto="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+				<Reference type="Gac" refto="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+				<Reference type="Gac" refto="Mono.Android" />
+			</References>
+			<Files>
+				<File name="MainActivity.cs" src="GlassApplication/MainActivity.cs" />
+				<File name="AndroidEnvironments.txt" src="GlassApplication/AndroidEnvironments.txt" BuildAction="AndroidEnvironment" />
+				<Directory name="Resources">
+					<File name="Resource.designer.cs" src="GlassApplication/Resource.cs" />
+					<RawFile name="AboutResources.txt" src="GlassApplication/AboutResources.txt" />
+					<Directory name="layout">
+					</Directory>
+					<Directory name="values">
+						<File name="Strings.xml"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello Glass, Tap Me!</string>
+    <string name="app_name">${ProjectName}</string>
+</resources>]]></File>
+					</Directory>
+					<Directory name="xml">
+						<File name="VoiceTriggerStart.xml"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<trigger keyword="My Xamarin App">
+    <!--<constraints network="true" /> // Include if your app trigger needs to connect to the internet-->
+    <!--<input prompt="My Prompt" noTouch="true" />  // No touch means don't ask for prompt when tapped on rather than spoken -->
+</trigger>]]></File>
+					</Directory>
+					<Directory name ="drawable">
+						<RawFile name="Icon.png" src="GlassApplication/Icon.png" />
+					</Directory>
+				</Directory>
+				<Directory name="Properties">
+					<File name="AssemblyInfo.cs" src="GlassApplication/AssemblyInfo.cs" />
+				</Directory>
+				<Directory name="Assets">
+					<RawFile name="AboutAssets.txt" src="GlassApplication/AboutAssets.txt" />
+				</Directory>
+			</Files>
+		</Project>
+	</Combine>
+</Template>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addin namespace="GlassAddin" 
+		id="GlassAddin" 
+		name="Google Glass Extension" 
+		author="ChrisNTR" 
+		copyright="ChrisNTR" 
+		url="http://chrisntr.github.io/"
+		description="Templates and helpers for Google Glass development." 
+		category="IDE extensions" 
+		version="1.0">
+	<Dependencies>
+		<Addin id="::MonoDevelop.Core" version="4.0" />
+		<Addin id="::MonoDevelop.Ide" version="4.0" />
+	</Dependencies>
+	<Runtime>
+		<Import file = "GoogleGlassTemplate.xpt.xml"/>
+	</Runtime>
+
+	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
+		<ProjectTemplate id   = "GoogleGlassTemplate"
+		                 file = "GoogleGlassTemplate.xpt.xml"/>
+	</Extension>
+
+
+</Addin>

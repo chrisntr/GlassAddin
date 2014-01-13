@@ -6,7 +6,7 @@
 		copyright="ChrisNTR" 
 		url="http://chrisntr.github.io/"
 		description="Templates and helpers for Google Glass development." 
-		category="IDE extensions" 
+		category="Mobile Development" 
 		version="1.0">
 	<Dependencies>
 		<Addin id="::MonoDevelop.Core" version="4.0" />

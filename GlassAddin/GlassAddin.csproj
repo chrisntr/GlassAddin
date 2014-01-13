@@ -63,14 +63,29 @@
     <Folder Include="GlassApplication\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GlassApplication\AndroidEnvironments.txt" />
-    <Content Include="GlassApplication\AboutAssets.txt" />
-    <Content Include="GlassApplication\AboutResources.txt" />
-    <Content Include="GlassApplication\AssemblyInfo.cs" />
-    <Content Include="GlassApplication\Main.axml" />
-    <Content Include="GlassApplication\MainActivity.cs" />
-    <Content Include="GlassApplication\Resource.cs" />
-    <Content Include="GlassApplication\Icon.png" />
-    <Content Include="GoogleGlassTemplate.xpt.xml" />
+    <Content Include="GlassApplication\AndroidEnvironments.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\AboutAssets.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\AboutResources.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\AssemblyInfo.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\MainActivity.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\Resource.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlassApplication\Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GoogleGlassTemplate.xpt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

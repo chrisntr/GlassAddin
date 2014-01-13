@@ -14,6 +14,13 @@
 	</Dependencies>
 	<Runtime>
 		<Import file = "GoogleGlassTemplate.xpt.xml"/>
+		<Import file = "GlassApplication/AboutAssets.txt" />
+		<Import file = "GlassApplication/AboutResources.txt" />
+		<Import file = "GlassApplication/AndroidEnvironments.txt" />
+		<Import file = "GlassApplication/AssemblyInfo.cs" />
+		<Import file = "GlassApplication/Icon.png" />
+		<Import file = "GlassApplication/MainActivity.cs" />
+		<Import file = "GlassApplication/Resource.cs" />
 	</Runtime>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">

@@ -29,6 +29,7 @@
 				<Reference type="Gac" refto="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
 				<Reference type="Gac" refto="Mono.Android" />
 			</References>
+
 			<Files>
 				<File name="MainActivity.cs" src="GlassApplication/MainActivity.cs" />
 				<File name="AndroidEnvironments.txt" src="GlassApplication/AndroidEnvironments.txt" BuildAction="AndroidEnvironment" />
@@ -46,7 +47,7 @@
 					</Directory>
 					<Directory name="xml">
 						<File name="VoiceTriggerStart.xml"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<trigger keyword="My Xamarin App">
+<trigger keyword="${ProjectName}">
     <!--<constraints network="true" /> // Include if your app trigger needs to connect to the internet-->
     <!--<input prompt="My Prompt" noTouch="true" />  // No touch means don't ask for prompt when tapped on rather than spoken -->
 </trigger>]]></File>

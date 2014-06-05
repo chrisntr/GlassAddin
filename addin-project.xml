@@ -1,4 +1,4 @@
-<AddinProject appVersion="4.0">
+<AddinProject appVersion="5.0">
   <Project platforms="Mac Win32">
     <AddinFile>GlassAddin/bin/Debug/GlassAddin.dll</AddinFile>
     <BuildFile>GlassAddin.sln</BuildFile>

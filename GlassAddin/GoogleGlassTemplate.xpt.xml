@@ -5,7 +5,7 @@
 		<_Category>C#/Glass</_Category>
 		<Icon>monodroid-project</Icon>
 		<LanguageName>C#</LanguageName>
-		<_Description>Creates a Google Glass Application that targets the XE12 Google Glass.</_Description>
+		<_Description>Creates a Google Glass Application that targets the XE16+ Google Glass.</_Description>
 	</TemplateConfiguration>
 	
 	<Actions>
@@ -22,7 +22,7 @@
 				AndroidApplication="true"
 				AndroidResgenFile="Resources/Resource.designer.cs"
 				AndroidResgenClass="Resource"
-				TargetFrameworkVersion="MonoAndroid,Version=v4.0.3" />
+				TargetFrameworkVersion="MonoAndroid,Version=v4.4" />
 			<References>
 				<Reference type="Gac" refto="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
 				<Reference type="Gac" refto="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />

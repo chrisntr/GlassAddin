@@ -20,6 +20,9 @@ namespace ${Namespace}
 		// https://components.xamarin.com/view/googleglass 
 		// so make sure you add that in to compile succesfully.
 
+		// Add in the following permission to AndroidManifest.xml for custom voice commands
+		// <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -28,7 +31,7 @@ namespace ${Namespace}
 			var card = new Card (this);
 			card.SetText ("Welcome to Xamarin Google Glass Development");
 			card.SetFootnote ("Let's get hacking!");
-			SetContentView(card.ToView ());
+			SetContentView(card.View);
 		}
 	}
 }
